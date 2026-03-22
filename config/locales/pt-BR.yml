@@ -2,7 +2,7 @@ pt-BR:
   number:
     currency:
       format:
-        unit: "€"
+        unit: "R$"
         delimiter: "."
         separator: ","
         precision: 2

@@ -371,7 +371,7 @@ substitute with emoji, icon libraries, or border tricks.
 ### Language
 - All UI copy in **Portuguese (Brazilian)**
 - Product descriptions may include origin country in parentheses: "Porto, Portugal"
-- Prices always formatted as: `€ 285,00` (euro sign, space, comma decimal)
+- Prices always formatted as: `R$ 285,00` (Real sign, space, comma decimal)
 
 ### Canonical Brand Phrases
 Use these exact strings — do not paraphrase:
