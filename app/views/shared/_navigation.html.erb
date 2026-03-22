@@ -1,0 +1,26 @@
+<nav class="nav" role="navigation" aria-label="Navegação principal" data-controller="menu">
+  <a href="/" class="nav__brand">Tesouros da Europa</a>
+
+  <div class="nav__links">
+    <a href="#colecao" class="nav__link">Colecção</a>
+    <a href="#sobre" class="nav__link">Sobre</a>
+    <a href="#contato" class="nav__link">Contato</a>
+  </div>
+
+  <button class="nav__toggle"
+          type="button"
+          data-action="menu#toggle"
+          aria-label="Abrir menu"
+          aria-expanded="false"
+          data-menu-target="button">
+    <span class="nav__toggle-bar"></span>
+    <span class="nav__toggle-bar"></span>
+    <span class="nav__toggle-bar"></span>
+  </button>
+
+  <div class="nav__overlay" data-menu-target="overlay">
+    <a href="#colecao" class="nav__link" data-action="click->menu#close">Colecção</a>
+    <a href="#sobre" class="nav__link" data-action="click->menu#close">Sobre</a>
+    <a href="#contato" class="nav__link" data-action="click->menu#close">Contato</a>
+  </div>
+</nav>

@@ -1,0 +1,30 @@
+body {
+  font-family: var(--font-body);
+  font-size: var(--fs-body);
+  color: var(--color-ink-mid);
+  background: var(--color-cream);
+}
+
+h1, h2, h3 {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-weight: 400;
+  line-height: 1.15;
+  color: var(--color-ink-deep);
+}
+
+h1 { font-size: var(--fs-h1); }
+h2 { font-size: var(--fs-h2); }
+
+p {
+  line-height: 1.7;
+}
+
+.section-label {
+  font-family: var(--font-label);
+  font-size: var(--fs-label);
+  letter-spacing: 5px;
+  color: var(--color-gold-primary);
+  text-transform: uppercase;
+  font-weight: 500;
+}

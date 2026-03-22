@@ -1,0 +1,138 @@
+/* Buttons */
+.btn {
+  font-family: var(--font-label);
+  font-size: 9px;
+  letter-spacing: 3.5px;
+  text-transform: uppercase;
+  padding: 14px 28px;
+  border-radius: var(--radius-sm);
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  transition: background 0.2s, color 0.2s, border-color 0.2s;
+}
+
+.btn--primary {
+  background: var(--color-gold-primary);
+  color: var(--color-ink-deep);
+}
+.btn--primary:hover {
+  background: var(--color-gold-light);
+}
+
+.btn--outline {
+  background: transparent;
+  color: var(--color-gold-primary);
+  border: 1px solid var(--color-gold-primary);
+}
+.btn--outline:hover {
+  background: var(--color-gold-primary);
+  color: var(--color-ink-deep);
+}
+
+.btn--dark {
+  background: var(--color-ink-deep);
+  color: var(--color-gold-primary);
+  border: 1px solid var(--color-gold-dark);
+}
+.btn--dark:hover {
+  border-color: var(--color-gold-primary);
+}
+
+/* Badges */
+.badge {
+  font-family: var(--font-label);
+  font-size: 8px;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  padding: 5px 12px;
+  border-radius: var(--radius-sm);
+  display: inline-block;
+}
+
+.badge--gold {
+  background: #FBF2E0;
+  color: var(--color-gold-dark);
+  border: 1px solid #EFD898;
+}
+.badge--sage {
+  background: #EFF0E6;
+  color: #5A5A28;
+  border: 1px solid #C8C89A;
+}
+.badge--ink {
+  background: var(--color-ink-deep);
+  color: var(--color-gold-primary);
+}
+.badge--outline {
+  background: transparent;
+  color: var(--color-gold-primary);
+  border: 1px solid var(--color-gold-primary);
+}
+
+/* Ornament (diamond divider) */
+.ornament {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  opacity: 0.45;
+}
+
+.ornament__line {
+  flex: 1;
+  height: 1px;
+  background: var(--color-gold-primary);
+  max-width: 200px;
+}
+
+.ornament__diamond {
+  width: 7px;
+  height: 7px;
+  background: var(--color-gold-primary);
+  transform: rotate(45deg);
+  flex-shrink: 0;
+}
+
+.ornament__dot {
+  width: 3px;
+  height: 3px;
+  background: var(--color-gold-primary);
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+/* Form fields */
+.field__label {
+  font-family: var(--font-label);
+  font-size: 8px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--color-ink-light);
+  display: block;
+  margin-bottom: 6px;
+}
+
+.field__input {
+  font-family: var(--font-body);
+  font-size: 15px;
+  padding: 11px 14px;
+  border: 1px solid var(--color-cream-dark);
+  border-radius: var(--radius-sm);
+  background: var(--color-cream);
+  color: var(--color-ink-deep);
+  width: 100%;
+  transition: border-color 0.2s;
+}
+
+.field__input:focus {
+  outline: none;
+  border-color: var(--color-gold-primary);
+}
+
+/* Focus states — global */
+:focus-visible {
+  outline: 2px solid var(--color-gold-primary);
+  outline-offset: 3px;
+}

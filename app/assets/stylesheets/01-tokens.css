@@ -1,0 +1,60 @@
+:root {
+  /* Gold — Primary */
+  --color-gold-primary:   #C4973A;
+  --color-gold-light:     #D4A84A;
+  --color-gold-highlight: #E8B84A;
+  --color-gold-dark:      #8B6820;
+  --color-gold-deep:      #6A4C10;
+
+  /* Botanical — Secondary */
+  --color-sage:           #8A7540;
+  --color-sage-light:     #A8924C;
+
+  /* Cream — Backgrounds */
+  --color-cream:          #FAF7F0;
+  --color-cream-mid:      #F2EDE2;
+  --color-cream-dark:     #E8DFC8;
+
+  /* Ink — Text & Dark surfaces */
+  --color-ink-deep:       #1A1510;
+  --color-ink-dark:       #2C2218;
+  --color-ink-mid:        #4A3820;
+  --color-ink-light:      #7A6A45;
+
+  /* Typography */
+  --font-display: 'Cormorant Garamond', Palatino, 'Book Antiqua', serif;
+  --font-label:   'Cinzel', 'Trajan Pro', serif;
+  --font-body:    'Cormorant Garamond', Palatino, serif;
+
+  /* Type scale */
+  --fs-hero:    clamp(48px, 8vw, 96px);
+  --fs-h1:      clamp(32px, 5vw, 48px);
+  --fs-h2:      clamp(24px, 3.5vw, 36px);
+  --fs-label:   10px;
+  --fs-body:    17px;
+  --fs-caption: 13px;
+  --fs-micro:   9px;
+
+  /* Spacing */
+  --space-1:  4px;
+  --space-2:  8px;
+  --space-3:  16px;
+  --space-4:  24px;
+  --space-5:  40px;
+  --space-6:  64px;
+  --space-7:  96px;
+  --space-8:  128px;
+
+  /* Borders & Radius */
+  --radius-sm: 2px;
+  --radius-md: 4px;
+  --radius-lg: 8px;
+
+  --border-gold:       1px solid var(--color-gold-primary);
+  --border-gold-faint: 1px solid var(--color-cream-dark);
+  --border-gold-inner: 0.6px solid var(--color-gold-primary);
+
+  /* Shadows */
+  --shadow-card: 0 2px 24px rgba(26, 21, 16, 0.10);
+  --shadow-lift: 0 8px 40px rgba(26, 21, 16, 0.15);
+}
