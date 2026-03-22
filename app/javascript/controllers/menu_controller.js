@@ -1,7 +1,7 @@
 import { Controller } from "@hotwired/stimulus"
 
 export default class extends Controller {
-  static targets = ["button", "overlay"]
+  static targets = ["button"]
 
   toggle() {
     const isOpen = this.element.dataset.menuOpen === "true"

@@ -6,17 +6,17 @@
 
 Rails.application.configure do
   config.content_security_policy do |policy|
-    policy.default_src :self, :https
-    policy.font_src    :self, :https, :data, "fonts.gstatic.com"
-    policy.img_src     :self, :https, :data
-    policy.object_src  :none
-    policy.script_src  :self, :https
-    policy.style_src   :self, :https, "fonts.googleapis.com"
-    # Specify URI for violation reports
-    # policy.report_uri "/csp-violation-report-endpoint"
+    policy.default_src     :self
+    policy.font_src        :self, "fonts.gstatic.com"
+    policy.img_src         :self, :data
+    policy.object_src      :none
+    policy.script_src      :self
+    policy.style_src       :self, "fonts.googleapis.com"
+    policy.connect_src     :self
+    policy.frame_ancestors :self
   end
 
   # Generate session nonces for permitted importmap and inline scripts.
-  config.content_security_policy_nonce_generator = ->(request) { request.session.id.to_s }
-  config.content_security_policy_nonce_directives = %w(script-src)
+  config.content_security_policy_nonce_generator = ->(request) { SecureRandom.base64(16) }
+  config.content_security_policy_nonce_directives = %w(script-src style-src)
 end

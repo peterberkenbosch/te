@@ -16,10 +16,6 @@ h1, h2, h3 {
 h1 { font-size: var(--fs-h1); }
 h2 { font-size: var(--fs-h2); }
 
-p {
-  line-height: 1.7;
-}
-
 .section-label {
   font-family: var(--font-label);
   font-size: var(--fs-label);

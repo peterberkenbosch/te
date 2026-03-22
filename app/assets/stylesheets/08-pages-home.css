@@ -129,6 +129,10 @@
   color: var(--color-ink-mid);
 }
 
+.about__ornament {
+  margin-top: var(--space-5);
+}
+
 /* Contact section */
 .contact {
   background: var(--color-ink-deep);
