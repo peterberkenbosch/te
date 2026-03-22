@@ -1,0 +1,70 @@
+/* Buttons */
+.btn {
+  font-family: var(--font-label);
+  font-size: 9px;
+  letter-spacing: 3.5px;
+  text-transform: uppercase;
+  padding: 14px 28px;
+  border-radius: var(--radius-sm);
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  transition: background 0.2s, color 0.2s, border-color 0.2s;
+}
+
+.btn--primary {
+  background: var(--color-gold-primary);
+  color: var(--color-ink-deep);
+}
+.btn--primary:hover {
+  background: var(--color-gold-light);
+}
+
+.btn--outline {
+  background: transparent;
+  color: var(--color-gold-primary);
+  border: 1px solid var(--color-gold-primary);
+}
+.btn--outline:hover {
+  background: var(--color-gold-primary);
+  color: var(--color-ink-deep);
+}
+
+/* Ornament (diamond divider) */
+.ornament {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  opacity: 0.45;
+}
+
+.ornament__line {
+  flex: 1;
+  height: 1px;
+  background: var(--color-gold-primary);
+  max-width: 200px;
+}
+
+.ornament__diamond {
+  width: 7px;
+  height: 7px;
+  background: var(--color-gold-primary);
+  transform: rotate(45deg);
+  flex-shrink: 0;
+}
+
+.ornament__dot {
+  width: 3px;
+  height: 3px;
+  background: var(--color-gold-primary);
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+/* Focus states — global */
+:focus-visible {
+  outline: 2px solid var(--color-gold-primary);
+  outline-offset: 3px;
+}
